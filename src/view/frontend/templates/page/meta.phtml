@@ -1,0 +1,9 @@
+<?php
+/** @var $block \Extroniks\CmsSeo\Block\PageMeta */
+?>
+<?php $alternatePages = $this->getAlternatePages(); ?>
+<?php if (count($alternatePages)): ?>
+    <?php foreach ($alternatePages as $lang => $url): ?>
+        <link rel="alternate" hreflang="<?= $lang; ?>" href="<?= $url; ?>" />
+    <?php endforeach; ?>
+<?php endif; ?>

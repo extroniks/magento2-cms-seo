@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="cms_seo" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1">
+            <label>Cms Seo</label>
+            <tab>general</tab>
+            <resource>Extroniks_CmsSeo::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1">
+                <label>General</label>                                
+                <field id="shared_website" type="select" translate="label" sortOrder="10" showInDefault="1">
+                    <label>Link between websites</label>
+                    <comment>If set to no only links between pages on stores on same website</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled" type="select" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="automatic_meta" type="select" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1"  showInStore="1">
+                    <label>Automatic Meta Generation</label>
+                    <comment>Automatically generate CMS page meta</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="href_lang" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Lang Href</label>
+                    <comment>Lang href used for this website/store pages.</comment>
+                    <validate>required-entry</validate>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -2,11 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="head.additional">
-            <block class="Extroniks\CmsSeo\Block\PageMeta" name="cms_page_meta" ifconfig="cms_seo/general/automatic_meta">
-                <arguments>
-                    <argument name="auto_inject" xsi:type="boolean">true</argument>
-                </arguments>
-            </block>
+            <block class="Extroniks\CmsSeo\Block\PageMeta" name="cms_page_meta" ifconfig="cms_seo/general/automatic_meta" />
         </referenceContainer>
     </body>
 </page>             

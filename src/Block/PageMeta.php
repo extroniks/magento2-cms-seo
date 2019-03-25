@@ -75,7 +75,7 @@ class PageMeta extends \Magento\Framework\View\Element\Template {
             $storeIds = [];
             $stores   = $this->storeManager->getStores();
             foreach ($stores as $store) {
-                if (!$this->helper->isSharedWebsiteEnabled() && $store->getWebsiteId() != $this->storeManager->getStore()->getId()) {
+                if (!$this->helper->isSharedWebsiteEnabled() && $store->getWebsiteId() != $this->storeManager->getStore()->getWebsiteId()) {
                     continue;
                 }
                 $storeIds[] = $store->getId();

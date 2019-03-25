@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <section id="cms_seo" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1">
+        <section id="cms_seo" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Cms Seo</label>
             <tab>general</tab>
             <resource>Extroniks_CmsSeo::config</resource>
-            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1">
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>                                
                 <field id="shared_website" type="select" translate="label" sortOrder="10" showInDefault="1">
                     <label>Link between websites</label>

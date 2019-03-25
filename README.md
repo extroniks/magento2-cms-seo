@@ -1,7 +1,7 @@
 # Magento 2 - Cms Seo
 
 Improves SEO rating by:
-    - creating meta tags to avoid duplicate content penalties
+- creating meta tags to avoid duplicate content penalties
 
 ## Installation
 1. Add this to your project dependecies list `composer require extroniks/magento2-cms-seo`
